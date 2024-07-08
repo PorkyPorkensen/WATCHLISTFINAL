@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #header {
@@ -53,12 +54,13 @@ button {
     align-items: center;
     display: flex;
     flex-direction: column;
-    color: lightgray
+    color: lightgray;
+
 }
 
 
 #main i { 
-    margin: 2.5em auto 0 auto;
+    margin: auto;
     font-size: 2em;
 }
 
@@ -66,26 +68,33 @@ button {
     margin-top: 2em;
     color: darkslategray;
     display: flex;
-    height: 25vw;
+
     width: 90%;
-    border-bottom: solid 1px;
+    padding-bottom: 3em;
+
 }
 
+.movDiv {
+    border-bottom: solid 1px;
+
+}
 .movDiv img {
     height: 180px;
     width: calc(180px * 5 / 7);
+    margin: auto 0;
 }
 
 .movInfo {
     margin-left: 2em;
+
 }
 
 .movDiv i {
+    padding-left: 1em;
     text-shadow: 1px 1px 5px gray;
     cursor: pointer;
     display: flex;
     font-size: 2em;
-    margin: auto 0 auto auto;
 }
 
 .movDiv p {
@@ -97,4 +106,22 @@ button {
     height: 20px;
     position: relative;
     bottom: -5px;
+}
+
+@media (max-width: 530px) {
+    #header {
+        flex-direction: column;
+        padding: 20px;    
+    }
+    #header  h3, #header  h1 {
+        margin-top: 20px;    
+    }
+    .movDiv, #movArea {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    }
+    *{
+        font-size: small;
+    }
 }

@@ -47,7 +47,7 @@ function clearWatchlist() {
     main.innerHTML = `
     <h4>Your watchlist is looking a little empty...</h4>
     <div id="asm">
-        <p><a href="/homepage.html">Let’s add some movies!<i class="fa-solid fa-circle-plus"></i></a></p>
+        <p><a href="/index.html">Let’s add some movies!<i class="fa-solid fa-circle-plus"></i></a></p>
     </div>`
     if(!confirm("Do you really want to clear your Watchlist?") ){
             e.preventDefault(); // ! => don't want to do this
